@@ -1,0 +1,49 @@
+name: flutter_local_llm
+description: "Local LLM demo — mirrors the iOS SwiftUI demo using flutter_gemma."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # flutter_gemma — v1.x modular architecture (core + opt-in engines)
+  flutter_gemma: ^1.5.2
+  flutter_gemma_mediapipe: ^1.0.4   # .task / .bin models (Android + iOS + Web)
+  flutter_gemma_litertlm: ^1.0.2    # .litertlm models (Android + iOS + Desktop)
+  flutter_gemma_embeddings: ^1.0.1  # text embeddings for the Embedding tab
+  flutter_gemma_rag_sqlite: ^1.1.0  # sqlite-vec vector store for the RAG tab
+
+  # State management
+  flutter_bloc: ^9.1.1
+  equatable: ^2.1.0
+
+  # Navigation
+  auto_route: ^11.1.0
+
+  # UI helpers (TextEditingController lifecycle without StatefulWidget)
+  flutter_hooks: ^0.21.3
+
+  # Environment — only sample.env is git-tracked, .env is ignored
+  flutter_dotenv: ^6.0.1
+
+  # RAG tab — sqlite-vec database file lives in the app documents dir
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  auto_route_generator: ^10.6.0
+  build_runner: ^2.15.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
