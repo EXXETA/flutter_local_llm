@@ -1,7 +1,7 @@
 # Flutter Local LLM
 
 A small Flutter demo for running language models entirely on-device with
-[`flutter_gemma`](https://pub.dev/packages/flutter_gemma). This app was built as a part of my Medium article about [Flutter Gemma: The hidden gem of cross-platform local AI](https://medium.com/@mobileatexxeta/cffdaaf007de).
+[`flutter_gemma`](https://pub.dev/packages/flutter_gemma). This app was built as a part of my Medium article about [Flutter Gemma: The hidden gem of cross-platform local AI](https://medium.com/@mobileatexxeta/flutter-gemma-the-hidden-gem-of-cross-platform-local-ai-cffdaaf007de).
 
 ## Features
 
